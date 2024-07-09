@@ -7,9 +7,17 @@ public class Letras {
         String palabra = lector.leeEntrada();
 
         ContadorCaracteres contadorCaracteres = new ContadorCaracteres();
-        System.out.println("Hay " + contadorCaracteres.cuentaVocales(palabra) + " vocales");
-        System.out.println("Hay " + contadorCaracteres.cuentaNumeros(palabra) + " numeros");
-        System.out.println("Hay " + contadorCaracteres.cuentaConsonantes(palabra) + " consonantes");
-        System.out.println("Hay " + contadorCaracteres.cuentaSimbolos(palabra) + " simbolos");
+//        Iterando por cada grupo
+//        System.out.println("Hay " + contadorCaracteres.cuentaVocales(palabra) + " vocales");
+//        System.out.println("Hay " + contadorCaracteres.cuentaNumeros(palabra) + " numeros");
+//        System.out.println("Hay " + contadorCaracteres.cuentaConsonantes(palabra) + " consonantes");
+//        System.out.println("Hay " + contadorCaracteres.cuentaSimbolos(palabra) + " simbolos");
+
+//        Iterar una sola vez
+        Modelo modelo = contadorCaracteres.contar(palabra);
+        System.out.println("Hay " + modelo.getVocales() + " vocales");
+        System.out.println("Hay " + modelo.getNumeros() + " numeros");
+        System.out.println("Hay " + modelo.getConsonantes() + " consonantes");
+        System.out.println("Hay " + modelo.getSimbolos() + " simbolos");
     }
 }
