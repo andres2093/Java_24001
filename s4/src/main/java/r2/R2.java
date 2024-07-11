@@ -24,6 +24,6 @@ public class R2 {
         vehiculo2.colocaLlantas(llanta5, llanta6, llanta7, llanta8);
         vehiculo2.llenaTanque();
 
-        System.out.println(vehiculo1.equals(llanta1));
+        System.out.println(vehiculo1.equals(vehiculo2));
     }
 }
